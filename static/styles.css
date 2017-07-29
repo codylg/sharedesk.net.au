@@ -235,6 +235,8 @@ header.page-header .get-directions a:hover { border-bottom-color: rgba(232, 232,
 
 header.page-header .button-yellow { margin-top: 40px; }
 
+@media (max-width: 600px) { header.page-header .button-yellow { width: 100%; } }
+
 header.page-header nav { position: fixed; top: 0; left: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; padding: 40px; }
 
 @media (max-width: 850px) { header.page-header nav { position: relative; padding: 0; } }
