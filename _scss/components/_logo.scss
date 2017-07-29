@@ -1,3 +1,33 @@
 .sharedesk-logo {
-  
+  @include prefix(box-sizing, border-box);
+  @include flex($property: inline-flex);
+  @include prefix(flex-wrap, wrap);
+  @include prefix(align-items, center);
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  background-color: $purple;
+  font-size: 14px;
+  color: $yellow;
+
+  span {
+    @include flex;
+    width: 50%;
+    height: 50%;
+    line-height: 0.66;
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      @include prefix(align-items, flex-start);
+    }
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      @include prefix(align-items, flex-end);
+    }
+
+    &:nth-child(even) {
+      @include prefix(justify-content, flex-end);
+    }
+  }
 }

@@ -209,3 +209,13 @@ header.page-header > div { -webkit-box-sizing: border-box; -moz-box-sizing: bord
 header.page-header .button-yellow { margin-top: 40px; }
 
 header.page-header nav { position: fixed; top: 0; right: 0; left: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; overflow-x: hidden; overflow-y: auto; width: 100%; height: 100px; padding: 40px; padding-right: 0; }
+
+.sharedesk-logo { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; display: -webkit-box; display: -webkit- inline-flex; display: -moz-box; display: -ms-flexbox; display: -ms- inline-flex; display: inline-flex; -webkit-flex-wrap: wrap; -moz-flex-wrap: wrap; -ms-flex-wrap: wrap; -o-flex-wrap: wrap; flex-wrap: wrap; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; width: 50px; height: 50px; padding: 10px; background-color: #3e2aa0; font-size: 14px; color: #ffcd76; }
+
+.sharedesk-logo span { display: -webkit-box; display: -webkit- flex; display: -moz-box; display: -ms-flexbox; display: -ms- flex; display: flex; width: 50%; height: 50%; line-height: 0.66; }
+
+.sharedesk-logo span:nth-child(1), .sharedesk-logo span:nth-child(2) { -webkit-align-items: flex-start; -moz-align-items: flex-start; -ms-align-items: flex-start; -o-align-items: flex-start; align-items: flex-start; }
+
+.sharedesk-logo span:nth-child(3), .sharedesk-logo span:nth-child(4) { -webkit-align-items: flex-end; -moz-align-items: flex-end; -ms-align-items: flex-end; -o-align-items: flex-end; align-items: flex-end; }
+
+.sharedesk-logo span:nth-child(even) { -webkit-justify-content: flex-end; -moz-justify-content: flex-end; -ms-justify-content: flex-end; -o-justify-content: flex-end; justify-content: flex-end; }
