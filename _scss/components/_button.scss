@@ -1,0 +1,57 @@
+.button,
+[class^="button-"],
+[class*=" button-"] {
+  display: inline-block;
+  @include prefix(box-sizing, border-box);
+  vertical-align: middle;
+  padding: 1em;
+  border: 0;
+  border-radius: $radius;
+  background-color: $grey-light;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1em;
+  text-align: center;
+  color: $purple;
+  @include font-antialias;
+  outline: none;
+  cursor: pointer;
+  @include prefix(appearance, none);
+  @include transition;
+  @include prefix(transition-property, color, background-color);
+
+  + .button,
+  + [class^="button-"],
+  + [class*=" button-"] {
+    margin-left: 0.5em;
+  }
+
+  &:focus,
+  &:hover {
+    background-color: $white;
+  }
+
+  &.button-full {
+    width: 100%;
+  }
+
+  &.button-black {
+    background-color: $deep-purple;
+    color: $white;
+
+    &:focus,
+    &:hover {
+      color: $grey-light;
+    }
+  }
+
+  &.button-white {
+    background-color: $white;
+    color: $deep-purple;
+
+    &:focus,
+    &:hover {
+      background-color: $grey-light;
+    }
+  }
+}

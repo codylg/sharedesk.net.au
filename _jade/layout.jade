@@ -1,0 +1,31 @@
+block variables
+  - var title = "Coworking & meeting"
+  - var description = "Sharedesk description."
+  - var slug = ""
+
+doctype html
+html(lang="en")
+
+  head
+
+    title #{title} &#8729; Sharedesk
+    meta(name="description", content="#{description}")
+    meta(name="robots", content="NOODP")
+    meta(charset="utf-8")
+    meta(name="viewport", content="initial-scale=1")
+
+    //- Opengraph
+    meta(property="og:title", content="#{title}")
+    meta(property="og:site_name", content="Sharedesk")
+    meta(property="og:description", content="#{description}")
+    meta(property="og:type", content="website")
+    meta(property="og:url", content="http://sharedesk.net.au/#{slug}")
+
+    link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
+    link(rel="stylesheet", href="/static/styles.css", async)
+
+  body
+
+    include _header
+
+    block content
