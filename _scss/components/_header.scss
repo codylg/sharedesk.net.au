@@ -33,6 +33,20 @@ header.page-header {
     }
   }
 
+  .get-directions {
+    margin-left: 20px;
+    font-size: 1.2rem;
+    opacity: 0.66;
+
+    a {
+      border-bottom-color: rgba($grey-light, 0.33);
+
+      &:hover {
+        border-bottom-color: rgba($grey-light, 0.66);
+      }
+    }
+  }
+
   .button-yellow {
     margin-top: $page-padding;
   }
