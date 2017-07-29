@@ -1,0 +1,19 @@
+footer {
+  @include flex;
+  width: 100%;
+  max-width: $content-width;
+  padding: $page-padding;
+  margin: 0 auto;
+
+  p {
+    @include prefix(flex-grow, 0);
+    margin: 0;
+    font-size: 1.2rem;
+    color: $grey-light;
+
+    &:nth-child(2) {
+      @include prefix(flex-grow, 1);
+      text-align: center;
+    }
+  }
+}
