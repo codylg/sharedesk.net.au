@@ -5,6 +5,10 @@ section.page-content {
   width: 100%;
   padding: 0 $page-padding;
 
+  @media (max-width: $mobile-width) {
+    padding: 0;
+  }
+
   article {
     @include prefix(box-sizing, border-box);
     width: 100%;
@@ -23,6 +27,11 @@ section.page-content {
 
     > *:last-child {
       margin-bottom: 0;
+    }
+
+    @media (max-width:  $mobile-width) {
+      border-radius: 0;
+      @include prefix(box-shadow, none);
     }
   }
 }

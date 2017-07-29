@@ -194,11 +194,15 @@ img { display: block; width: 100%; height: auto; }
 
 section.page-content { position: relative; z-index: 2; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; width: 100%; padding: 0 40px; }
 
+@media (max-width: 600px) { section.page-content { padding: 0; } }
+
 section.page-content article { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; width: 100%; max-width: 600px; padding: 40px; margin: 0 auto; margin-bottom: 40px; border-radius: 10px; background-color: white; color: #211e3c; -webkit-box-shadow: 0 20px 40px rgba(33, 30, 60, 0.66); -moz-box-shadow: 0 20px 40px rgba(33, 30, 60, 0.66); -ms-box-shadow: 0 20px 40px rgba(33, 30, 60, 0.66); -o-box-shadow: 0 20px 40px rgba(33, 30, 60, 0.66); box-shadow: 0 20px 40px rgba(33, 30, 60, 0.66); }
 
 section.page-content article > *:first-child { margin-top: 0; }
 
 section.page-content article > *:last-child { margin-bottom: 0; }
+
+@media (max-width: 600px) { section.page-content article { border-radius: 0; -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none; box-shadow: none; } }
 
 footer { display: -webkit-box; display: -webkit- flex; display: -moz-box; display: -ms-flexbox; display: -ms- flex; display: flex; width: 100%; max-width: 600px; padding: 40px; margin: 0 auto; }
 
@@ -210,15 +214,21 @@ footer a { border-bottom-color: rgba(232, 232, 248, 0.33); }
 
 footer a:hover { border-bottom-color: rgba(232, 232, 248, 0.66); }
 
-header.page-header { position: relative; z-index: 1; padding: 80px; background-color: #211e3c; color: #e8e8f8; }
+header.page-header { position: relative; z-index: 1; padding: 80px 40px; background-color: #211e3c; color: #e8e8f8; }
+
+@media (max-width: 600px) { header.page-header { padding: 40px; } }
 
 header.page-header::after { content: ''; position: absolute; z-index: 0; left: 0; bottom: -20vw; width: 100%; height: 20vw; background-color: #211e3c; -webkit-clip-path: polygon(0 0, 100% 0, 0 100%, 0 0); -moz-clip-path: polygon(0 0, 100% 0, 0 100%, 0 0); -ms-clip-path: polygon(0 0, 100% 0, 0 100%, 0 0); -o-clip-path: polygon(0 0, 100% 0, 0 100%, 0 0); clip-path: polygon(0 0, 100% 0, 0 100%, 0 0); }
 
 header.page-header > div { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; display: block; width: 100%; max-width: 600px; margin: 0 auto; }
 
+@media (max-width: 800px) { header.page-header > div { padding-top: 40px; } }
+
 header.page-header .button-yellow { margin-top: 40px; }
 
-header.page-header nav { position: fixed; top: 0; right: 0; left: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; overflow-x: hidden; overflow-y: auto; width: 100%; height: 100px; padding: 40px; padding-right: 0; }
+header.page-header nav { position: fixed; top: 0; left: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; padding: 40px; }
+
+@media (max-width: 600px) { header.page-header nav { position: relative; padding: 0; } }
 
 .sharedesk-logo { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; display: -webkit-box; display: -webkit- inline-flex; display: -moz-box; display: -ms-flexbox; display: -ms- inline-flex; display: inline-flex; -webkit-flex-wrap: wrap; -moz-flex-wrap: wrap; -ms-flex-wrap: wrap; -o-flex-wrap: wrap; flex-wrap: wrap; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; width: 50px; height: 50px; padding: 10px; background-color: #3e2aa0; font-size: 14px; color: #ffcd76; }
 
