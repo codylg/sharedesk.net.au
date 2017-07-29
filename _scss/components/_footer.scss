@@ -16,4 +16,12 @@ footer {
       text-align: center;
     }
   }
+
+  a {
+    border-bottom-color: rgba($grey-light, 0.33);
+
+    &:hover {
+      border-bottom-color: rgba($grey-light, 0.66);
+    }
+  }
 }
