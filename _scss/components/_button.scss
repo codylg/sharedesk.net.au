@@ -35,9 +35,18 @@
     background-color: $yellow;
     color: $purple;
 
+    &.button-glow {
+      @include prefix(box-shadow, 0 10px 40px rgba($yellow, 0.33));
+      @include prefix(transition-property, color, background-color, box-shadow);
+    }
+
     &:focus,
     &:hover {
       background-color: $yellow-light;
+
+      &.button-glow {
+        @include prefix(box-shadow, 0 12px 45px rgba($yellow, 0.4));
+      }
     }
   }
 

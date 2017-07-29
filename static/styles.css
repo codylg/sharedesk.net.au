@@ -178,7 +178,11 @@ img { display: block; width: 100%; height: auto; }
 
 .button.button-yellow, [class^="button-"].button-yellow, [class*=" button-"].button-yellow { background-color: #ffcd76; color: #3e2aa0; }
 
+.button.button-yellow.button-glow, [class^="button-"].button-yellow.button-glow, [class*=" button-"].button-yellow.button-glow { -webkit-box-shadow: 0 10px 40px rgba(255, 205, 118, 0.33); -moz-box-shadow: 0 10px 40px rgba(255, 205, 118, 0.33); -ms-box-shadow: 0 10px 40px rgba(255, 205, 118, 0.33); -o-box-shadow: 0 10px 40px rgba(255, 205, 118, 0.33); box-shadow: 0 10px 40px rgba(255, 205, 118, 0.33); -webkit-transition-property: color, background-color, box-shadow; -moz-transition-property: color, background-color, box-shadow; -ms-transition-property: color, background-color, box-shadow; -o-transition-property: color, background-color, box-shadow; transition-property: color, background-color, box-shadow; }
+
 .button.button-yellow:focus, .button.button-yellow:hover, [class^="button-"].button-yellow:focus, [class^="button-"].button-yellow:hover, [class*=" button-"].button-yellow:focus, [class*=" button-"].button-yellow:hover { background-color: #ffd998; }
+
+.button.button-yellow:focus.button-glow, .button.button-yellow:hover.button-glow, [class^="button-"].button-yellow:focus.button-glow, [class^="button-"].button-yellow:hover.button-glow, [class*=" button-"].button-yellow:focus.button-glow, [class*=" button-"].button-yellow:hover.button-glow { -webkit-box-shadow: 0 12px 45px rgba(255, 205, 118, 0.4); -moz-box-shadow: 0 12px 45px rgba(255, 205, 118, 0.4); -ms-box-shadow: 0 12px 45px rgba(255, 205, 118, 0.4); -o-box-shadow: 0 12px 45px rgba(255, 205, 118, 0.4); box-shadow: 0 12px 45px rgba(255, 205, 118, 0.4); }
 
 .button.button-black, [class^="button-"].button-black, [class*=" button-"].button-black { background-color: #211e3c; color: white; }
 
@@ -188,10 +192,20 @@ img { display: block; width: 100%; height: auto; }
 
 .button.button-white:focus, .button.button-white:hover, [class^="button-"].button-white:focus, [class^="button-"].button-white:hover, [class*=" button-"].button-white:focus, [class*=" button-"].button-white:hover { background-color: #e8e8f8; }
 
-header.page-header { position: relative; padding: 80px; background-color: #211e3c; color: #e8e8f8; }
+section.page-content { position: relative; z-index: 2; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; width: 100%; padding: 0 40px; }
+
+section.page-content article { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; width: 100%; max-width: 600px; padding: 40px; margin: 0 auto; margin-bottom: 40px; border-radius: 10px; background-color: white; color: #211e3c; -webkit-box-shadow: 0 20px 40px rgba(33, 30, 60, 0.66); -moz-box-shadow: 0 20px 40px rgba(33, 30, 60, 0.66); -ms-box-shadow: 0 20px 40px rgba(33, 30, 60, 0.66); -o-box-shadow: 0 20px 40px rgba(33, 30, 60, 0.66); box-shadow: 0 20px 40px rgba(33, 30, 60, 0.66); }
+
+section.page-content article > *:first-child { margin-top: 0; }
+
+section.page-content article > *:last-child { margin-bottom: 0; }
+
+header.page-header { position: relative; z-index: 1; padding: 80px; background-color: #211e3c; color: #e8e8f8; }
 
 header.page-header::after { content: ''; position: absolute; z-index: 0; left: 0; bottom: -20vw; width: 100%; height: 20vw; background-color: #211e3c; -webkit-clip-path: polygon(0 0, 100% 0, 0 100%, 0 0); -moz-clip-path: polygon(0 0, 100% 0, 0 100%, 0 0); -ms-clip-path: polygon(0 0, 100% 0, 0 100%, 0 0); -o-clip-path: polygon(0 0, 100% 0, 0 100%, 0 0); clip-path: polygon(0 0, 100% 0, 0 100%, 0 0); }
 
-header.page-header > div { display: block; width: 100%; max-width: 600px; margin: 0 auto; }
+header.page-header > div { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; display: block; width: 100%; max-width: 600px; margin: 0 auto; }
+
+header.page-header .button-yellow { margin-top: 40px; }
 
 header.page-header nav { position: fixed; top: 0; right: 0; left: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; overflow-x: hidden; overflow-y: auto; width: 100%; height: 100px; padding: 40px; padding-right: 0; }

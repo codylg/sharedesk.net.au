@@ -1,0 +1,28 @@
+section.page-content {
+  position: relative;
+  z-index: 2;
+  @include prefix(box-sizing, border-box);
+  width: 100%;
+  padding: 0 $page-padding;
+
+  article {
+    @include prefix(box-sizing, border-box);
+    width: 100%;
+    max-width: $content-width;
+    padding: $page-padding;
+    margin: 0 auto;
+    margin-bottom: $page-padding;
+    border-radius: $radius * 2;
+    background-color: $white;
+    color: $deep-purple;
+    @include prefix(box-shadow, 0 20px 40px rgba($deep-purple, 0.66));
+
+    > *:first-child {
+      margin-top: 0;
+    }
+
+    > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

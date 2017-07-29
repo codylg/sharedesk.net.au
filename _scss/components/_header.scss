@@ -1,5 +1,6 @@
 header.page-header {
   position: relative;
+  z-index: 1;
   padding: $page-padding * 2;
   background-color: $deep-purple;
   color: $grey-light;
@@ -17,10 +18,15 @@ header.page-header {
   }
 
   > div {
+    @include prefix(box-sizing, border-box);
     display: block;
     width: 100%;
     max-width: $content-width;
     margin: 0 auto;
+  }
+
+  .button-yellow {
+    margin-top: $page-padding;
   }
 
   nav {
