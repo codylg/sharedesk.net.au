@@ -31,8 +31,14 @@
     background-color: $white;
   }
 
-  &.button-full {
-    width: 100%;
+  &.button-yellow {
+    background-color: $yellow;
+    color: $purple;
+
+    &:focus,
+    &:hover {
+      background-color: $yellow-light;
+    }
   }
 
   &.button-black {

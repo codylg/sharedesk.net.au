@@ -1,18 +1,39 @@
 header.page-header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  @include prefix(box-sizing, border-box);
-  overflow-x: hidden;
-  overflow-y: auto;
-  width: 100%;
-  height: 100px;
-  padding: $page-padding;
-  padding-right: 0;
+  position: relative;
+  padding: $page-padding * 2;
+  background-color: $deep-purple;
+  color: $grey-light;
 
-  p {
-    margin-top: 2.5em;
-    @include prefix(animation, fade-in 1s ease-out 1);
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    bottom: -20vw;
+    width: 100%;
+    height: 20vw;
+    background-color: $deep-purple;
+    @include prefix(clip-path, polygon(0 0, 100% 0, 0 100%, 0 0));
+  }
+
+  > div {
+    display: block;
+    width: 100%;
+    max-width: $content-width;
+    margin: 0 auto;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    @include prefix(box-sizing, border-box);
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100px;
+    padding: $page-padding;
+    padding-right: 0;
   }
 }
