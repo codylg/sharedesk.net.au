@@ -1,5 +1,6 @@
 footer {
   @include flex;
+  @include prefix(box-sizing, border-box);
   width: 100%;
   max-width: $content-width;
   padding: $page-padding;
@@ -22,6 +23,17 @@ footer {
 
     &:hover {
       border-bottom-color: rgba($grey-light, 0.66);
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    @include prefix(flex-wrap, wrap);
+
+    p {
+      @include prefix(flex-grow, 1);
+      width: 100%;
+      margin-bottom: $page-padding;
+      text-align: center;
     }
   }
 }

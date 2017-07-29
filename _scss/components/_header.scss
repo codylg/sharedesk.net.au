@@ -5,6 +5,10 @@ header.page-header {
   background-color: $deep-purple;
   color: $grey-light;
 
+  @media (max-width: $tablet-width) {
+    padding-top: $page-padding;
+  }
+
   @media (max-width: $mobile-width) {
     padding: $page-padding;
   }
@@ -27,10 +31,6 @@ header.page-header {
     width: 100%;
     max-width: $content-width;
     margin: 0 auto;
-
-    @media (max-width: $tablet-width) {
-      padding-top: $page-padding;
-    }
   }
 
   .get-directions {
@@ -58,7 +58,7 @@ header.page-header {
     @include prefix(box-sizing, border-box);
     padding: $page-padding;
 
-    @media (max-width: $mobile-width) {
+    @media (max-width: $tablet-width) {
       position: relative;
       padding: 0;
     }
