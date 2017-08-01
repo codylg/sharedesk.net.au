@@ -225,6 +225,22 @@ header.page-header { position: relative; z-index: 1; padding: 80px 40px; backgro
 
 header.page-header::after { content: ''; position: absolute; z-index: 0; left: 0; bottom: -20vw; width: 100%; height: 20vw; background-color: #211e3c; -webkit-clip-path: polygon(0 0, 100% 0, 0 100%, 0 0); -moz-clip-path: polygon(0 0, 100% 0, 0 100%, 0 0); -ms-clip-path: polygon(0 0, 100% 0, 0 100%, 0 0); -o-clip-path: polygon(0 0, 100% 0, 0 100%, 0 0); clip-path: polygon(0 0, 100% 0, 0 100%, 0 0); }
 
+@media (max-width: 850px) { header.page-header nav { display: -webkit-box; display: -webkit- flex; display: -moz-box; display: -ms-flexbox; display: -ms- flex; display: flex; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; } }
+
+header.page-header nav .logo, header.page-header nav .nav-links { position: fixed; top: 0; padding: 40px; }
+
+@media (max-width: 850px) { header.page-header nav .logo, header.page-header nav .nav-links { position: relative; padding: 0; } }
+
+header.page-header nav .logo { left: 0; -webkit-flex-grow: 1; -moz-flex-grow: 1; -ms-flex-grow: 1; -o-flex-grow: 1; flex-grow: 1; -webkit-flex-shrink: 0; -moz-flex-shrink: 0; -ms-flex-shrink: 0; -o-flex-shrink: 0; flex-shrink: 0; }
+
+header.page-header nav .nav-links { right: 0; -webkit-flex-grow: 0; -moz-flex-grow: 0; -ms-flex-grow: 0; -o-flex-grow: 0; flex-grow: 0; -webkit-flex-shrink: 0; -moz-flex-shrink: 0; -ms-flex-shrink: 0; -o-flex-shrink: 0; flex-shrink: 0; }
+
+header.page-header nav .nav-links a { font-weight: 700; border-bottom-color: #726b85; }
+
+header.page-header nav .nav-links a:hover { border-bottom-color: #3e2aa0; }
+
+header.page-header nav .nav-links a + a { margin-left: 40px; }
+
 header.page-header > div { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; display: block; width: 100%; max-width: 600px; margin: 0 auto; }
 
 header.page-header .get-directions { margin-left: 20px; font-size: 1.2rem; color: #726b85; }
@@ -238,10 +254,6 @@ header.page-header .get-directions a:hover { border-bottom-color: rgba(114, 107,
 header.page-header .button-yellow { margin-top: 40px; }
 
 @media (max-width: 600px) { header.page-header .button-yellow { width: 100%; } }
-
-header.page-header nav { position: fixed; top: 0; left: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; padding: 40px; }
-
-@media (max-width: 850px) { header.page-header nav { position: relative; padding: 0; } }
 
 .sharedesk-logo { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; display: -webkit-box; display: -webkit- inline-flex; display: -moz-box; display: -ms-flexbox; display: -ms- inline-flex; display: inline-flex; -webkit-flex-wrap: wrap; -moz-flex-wrap: wrap; -ms-flex-wrap: wrap; -o-flex-wrap: wrap; flex-wrap: wrap; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; width: 50px; height: 50px; padding: 10px; background-color: #3e2aa0; font-size: 14px; color: #ffcd76; }
 

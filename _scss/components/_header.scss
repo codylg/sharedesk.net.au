@@ -25,6 +25,51 @@ header.page-header {
     @include prefix(clip-path, polygon(0 0, 100% 0, 0 100%, 0 0));
   }
 
+  nav {
+
+    @media (max-width: $tablet-width) {
+      @include flex;
+      @include prefix(align-items, center);
+    }
+
+    .logo,
+    .nav-links {
+      position: fixed;
+      top: 0;
+      padding: $page-padding;
+
+      @media (max-width: $tablet-width) {
+        position: relative;
+        padding: 0;
+      }
+    }
+
+    .logo {
+      left: 0;
+      @include prefix(flex-grow, 1);
+      @include prefix(flex-shrink, 0);
+    }
+
+    .nav-links {
+      right: 0;
+      @include prefix(flex-grow, 0);
+      @include prefix(flex-shrink, 0);
+
+      a {
+        font-weight: 700;
+        border-bottom-color: $grey-dark;
+
+        &:hover {
+          border-bottom-color: $purple;
+        }
+
+        + a {
+          margin-left: $page-padding;
+        }
+      }
+    }
+  }
+
   > div {
     @include prefix(box-sizing, border-box);
     display: block;
@@ -56,19 +101,6 @@ header.page-header {
 
     @media (max-width: $mobile-width) {
       width: 100%;
-    }
-  }
-
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    @include prefix(box-sizing, border-box);
-    padding: $page-padding;
-
-    @media (max-width: $tablet-width) {
-      position: relative;
-      padding: 0;
     }
   }
 }
