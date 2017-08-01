@@ -4,13 +4,13 @@
   display: inline-block;
   @include prefix(box-sizing, border-box);
   vertical-align: middle;
-  padding: 1em;
+  padding: 1.33em;
   border: 0;
   border-radius: $radius;
   background-color: $grey-light;
   font-weight: 700;
-  font-size: 1.2rem;
-  line-height: 1em;
+  font-size: 1.5rem;
+  line-height: 0.66em;
   text-align: center;
   color: $purple;
   @include font-antialias;

@@ -170,7 +170,7 @@ img { display: block; width: 100%; height: auto; }
 
 .white-text a:hover { border-bottom-color: white; }
 
-.button, [class^="button-"], [class*=" button-"] { display: inline-block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; vertical-align: middle; padding: 1em; border: 0; border-radius: 5px; background-color: #e8e8f8; font-weight: 700; font-size: 1.2rem; line-height: 1em; text-align: center; color: #3e2aa0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; outline: none; cursor: pointer; -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none; -o-appearance: none; appearance: none; -webkit-transition: all 0.33s cubic-bezier(0.19, 1, 0.22, 1); -moz-transition: all 0.33s cubic-bezier(0.19, 1, 0.22, 1); -ms-transition: all 0.33s cubic-bezier(0.19, 1, 0.22, 1); -o-transition: all 0.33s cubic-bezier(0.19, 1, 0.22, 1); transition: all 0.33s cubic-bezier(0.19, 1, 0.22, 1); -webkit-transition-property: color, background-color; -moz-transition-property: color, background-color; -ms-transition-property: color, background-color; -o-transition-property: color, background-color; transition-property: color, background-color; }
+.button, [class^="button-"], [class*=" button-"] { display: inline-block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; vertical-align: middle; padding: 1.33em; border: 0; border-radius: 5px; background-color: #e8e8f8; font-weight: 700; font-size: 1.5rem; line-height: 0.66em; text-align: center; color: #3e2aa0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; outline: none; cursor: pointer; -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none; -o-appearance: none; appearance: none; -webkit-transition: all 0.33s cubic-bezier(0.19, 1, 0.22, 1); -moz-transition: all 0.33s cubic-bezier(0.19, 1, 0.22, 1); -ms-transition: all 0.33s cubic-bezier(0.19, 1, 0.22, 1); -o-transition: all 0.33s cubic-bezier(0.19, 1, 0.22, 1); transition: all 0.33s cubic-bezier(0.19, 1, 0.22, 1); -webkit-transition-property: color, background-color; -moz-transition-property: color, background-color; -ms-transition-property: color, background-color; -o-transition-property: color, background-color; transition-property: color, background-color; }
 
 .button + .button, .button + [class^="button-"], .button + [class*=" button-"], [class^="button-"] + .button, [class^="button-"] + [class^="button-"], [class^="button-"] + [class*=" button-"], [class*=" button-"] + .button, [class*=" button-"] + [class^="button-"], [class*=" button-"] + [class*=" button-"] { margin-left: 0.5em; }
 
@@ -227,11 +227,13 @@ header.page-header::after { content: ''; position: absolute; z-index: 0; left: 0
 
 header.page-header > div { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; display: block; width: 100%; max-width: 600px; margin: 0 auto; }
 
-header.page-header .get-directions { margin-left: 20px; font-size: 1.2rem; opacity: 0.66; }
+header.page-header .get-directions { margin-left: 20px; font-size: 1.2rem; color: #726b85; }
 
-header.page-header .get-directions a { border-bottom-color: rgba(232, 232, 248, 0.33); }
+header.page-header .get-directions:hover { color: #e8e8f8; }
 
-header.page-header .get-directions a:hover { border-bottom-color: rgba(232, 232, 248, 0.66); }
+header.page-header .get-directions a { border-bottom-color: rgba(114, 107, 133, 0.33); }
+
+header.page-header .get-directions a:hover { border-bottom-color: rgba(114, 107, 133, 0.66); }
 
 header.page-header .button-yellow { margin-top: 40px; }
 

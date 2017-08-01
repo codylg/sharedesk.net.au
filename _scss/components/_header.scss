@@ -36,13 +36,17 @@ header.page-header {
   .get-directions {
     margin-left: 20px;
     font-size: 1.2rem;
-    opacity: 0.66;
+    color: $grey-dark;
+
+    &:hover {
+      color: $grey-light;
+    }
 
     a {
-      border-bottom-color: rgba($grey-light, 0.33);
+      border-bottom-color: rgba($grey-dark, 0.33);
 
       &:hover {
-        border-bottom-color: rgba($grey-light, 0.66);
+        border-bottom-color: rgba($grey-dark, 0.66);
       }
     }
   }
