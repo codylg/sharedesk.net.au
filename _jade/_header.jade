@@ -7,12 +7,13 @@ header.page-header
       .nav-links
         if slug != "home"
           &larr; 
-          a.underline-link(href="/") Pricing
-            span.mobile-hide  &amp; facilities
+          a.underline-link(href="/") Facilities
+          //- a.underline-link(href="/") Pricing
+          //-   span.mobile-hide  &amp; facilities
         if slug != "contact"
           a.underline-link(href="/contact") Contact
-        if slug != "about"
-          a.underline-link(href="/about") About
+        //- if slug != "about"
+        //-   a.underline-link(href="/about") About
 
     if slug == "home"
       h1 Sharedesk co-working & meeting space
