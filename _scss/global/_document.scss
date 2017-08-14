@@ -126,3 +126,10 @@ img {
 .grey-text {
   color: $grey-dark;
 }
+
+@media (max-width:  $mobile-width) {
+
+  .mobile-hide {
+    display: none;
+  }
+}
