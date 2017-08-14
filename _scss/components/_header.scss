@@ -16,7 +16,7 @@ header.page-header {
   &::after {
     content: '';
     position: absolute;
-    z-index: 0;
+    z-index: -1;
     left: 0;
     bottom: -20vw;
     width: 100%;
