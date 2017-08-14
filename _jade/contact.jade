@@ -1,0 +1,22 @@
+extends layout
+
+block append variables
+  - var title = "Contact us"
+  - var slug = "contact"
+
+block content
+  
+  article
+    h2 Email
+    p
+      a.underline-link(href="mailto:hello@sharedesk.net.au") hello@sharedesk.net.au
+    h2 Phone
+    p
+      a.underline-link(href="tel:+61412651649") +614 1265 1649
+    h2 Address
+    p 1/10 Williams St, Dayboro Qld
+    p
+      a.underline-link(href="https://www.google.com.au/maps/dir//1%2F10+Williams+St,+Dayboro+QLD+4521/@-27.1969582,152.821344,17z/data=!4m16!1m7!3m6!1s0x6b94078702927165:0x7d9e27ad3801e3d2!2s1%2F10+Williams+St,+Dayboro+QLD+4521!3b1!8m2!3d-27.196963!4d152.8235327!4m7!1m0!1m5!1m1!1s0x6b94078702927165:0x7d9e27ad3801e3d2!2m2!1d152.8235327!2d-27.196963", target="_blank") Get&nbsp;directions
+      |  &rarr;
+
+    iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7097.412883967818!2d152.8191553347168!3d-27.196961806104735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b94078702927165%3A0x7d9e27ad3801e3d2!2s1%2F10+Williams+St%2C+Dayboro+QLD+4521!5e0!3m2!1sen!2sau!4v1502683005358", frameborder="0", allowfullscreen)

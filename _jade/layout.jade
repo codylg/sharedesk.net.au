@@ -24,7 +24,10 @@ html(lang="en")
     link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
     link(rel="stylesheet", href="/static/styles.css", async)
 
-  body
+  if slug == ""
+    - var slug = "home"
+
+  body(id="#{slug}")
 
     include _header
 

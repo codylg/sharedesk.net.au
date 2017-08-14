@@ -204,6 +204,8 @@ section.page-content article > *:first-child { margin-top: 0; }
 
 section.page-content article > *:last-child { margin-bottom: 0; }
 
+section.page-content article iframe { width: 100%; height: 500px; border: 0; }
+
 @media (max-width: 600px) { section.page-content article { border-radius: 0; -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none; box-shadow: none; } }
 
 footer { display: -webkit-box; display: -webkit- flex; display: -moz-box; display: -ms-flexbox; display: -ms- flex; display: flex; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; width: 100%; max-width: 600px; padding: 40px; margin: 0 auto; }
