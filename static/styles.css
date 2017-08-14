@@ -164,6 +164,8 @@ figure { padding: 0; margin: 0; }
 
 img { display: block; width: 100%; height: auto; }
 
+.grey-text { color: #726b85; }
+
 .white-text { color: white; }
 
 .white-text a { border-bottom-color: rgba(255, 255, 255, 0.33); }
@@ -264,3 +266,21 @@ header.page-header .button-yellow { margin-top: 40px; }
 .sharedesk-logo span:nth-child(3), .sharedesk-logo span:nth-child(4) { -webkit-align-items: flex-end; -moz-align-items: flex-end; -ms-align-items: flex-end; -o-align-items: flex-end; align-items: flex-end; }
 
 .sharedesk-logo span:nth-child(even) { -webkit-justify-content: flex-end; -moz-justify-content: flex-end; -ms-justify-content: flex-end; -o-justify-content: flex-end; justify-content: flex-end; }
+
+table { width: 100%; }
+
+table th, table td { padding: 12px 15px 14px; }
+
+table th:first-child, table td:first-child { padding-left: 0; }
+
+table th:last-child, table td:last-child { padding-right: 0; }
+
+table thead th { text-align: left; }
+
+table tbody tr { border-top: 1px solid #e8e8f8; }
+
+table.pricing-table th { font-weight: 400; color: #726b85; }
+
+table.pricing-table tbody td:first-child { font-weight: 700; }
+
+table.pricing-table tbody td:last-child { text-align: right; }

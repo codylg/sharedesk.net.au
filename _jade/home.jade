@@ -3,8 +3,51 @@ extends layout
 block content
   
   article
-    h2 Our services
-    p Semi-permanent & casual shared workspaces
-    p Private meeting & conferencing room
-    p Workshops &amp; collective hub
-    p WiFi &bull; Skype &bull; Office facilities 
+    h2 Pricing &amp; facilites
+
+    table.pricing-table
+      thead
+        tr
+          th Desk
+          th(colspan="2") Price
+      tbody
+        tr
+          td Standup hotdesk
+          td $30/day
+          td.grey-text
+            a.underline-link(href="#", target="_blank") View details
+            |  &rarr;
+        tr
+          td Partitioned desk
+          td $35/day
+          td.grey-text
+            a.underline-link(href="#", target="_blank") View details
+            |  &rarr;
+        tr
+          td 12-seat meeting room
+          td $30/hour
+          td.grey-text
+            a.underline-link(href="#", target="_blank") View details
+            |  &rarr;
+            
+    p All desks come with:
+    ul
+      li High-speed WiFi
+      li Kitchen facilities
+      li Lounge area
+      li Locker hire
+
+    table.opening-hours
+      thead
+        tr
+          th Opening hours
+      tbody
+        tr
+          td Monday - Friday
+          td 8am - 6pm
+        tr
+          td Saturday
+          td 9am - 5pm
+        tr
+          td Sunday
+          td 9am - 5pm
