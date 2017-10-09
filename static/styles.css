@@ -291,6 +291,8 @@ table tbody tr { border-top: 1px solid #e8e8f8; }
 
 table.pricing-table th { font-weight: 400; color: #726b85; }
 
+table.pricing-table tbody td { vertical-align: top; }
+
 table.pricing-table tbody td:first-child { font-weight: 700; }
 
-table.pricing-table tbody td:last-child { text-align: right; }
+table.pricing-table tbody td:first-child .grey-text { font-weight: 400; }

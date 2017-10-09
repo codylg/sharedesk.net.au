@@ -36,13 +36,14 @@ table {
     }
 
     tbody td {
+      vertical-align: top;
 
       &:first-child {
         font-weight: 700;
-      }
 
-      &:last-child {
-        text-align: right;
+        .grey-text {
+          font-weight: 400;
+        }
       }
     }
   }
