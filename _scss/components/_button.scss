@@ -31,6 +31,14 @@
     background-color: $white;
   }
 
+  &.button-small {
+    font-size: 1.2rem;
+  }
+
+  &.button-wide {
+    width: 100%;
+  }
+
   &.button-yellow {
     background-color: $yellow;
     color: $purple;
@@ -47,6 +55,16 @@
       &.button-glow {
         @include prefix(box-shadow, 0 12px 45px rgba($yellow, 0.4));
       }
+    }
+  }
+
+  &.button-purple {
+    background-color: $purple;
+    color: $yellow;
+
+    &:focus,
+    &:hover {
+      color: $yellow-light;
     }
   }
 
