@@ -121,6 +121,11 @@ img {
   display: block;
   width: 100%;
   height: auto;
+
+  article & {
+    border-radius: $radius;
+    margin: 2em 0;
+  }
 }
 
 .grey-text {
