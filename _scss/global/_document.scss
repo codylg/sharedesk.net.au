@@ -123,8 +123,8 @@ img {
   height: auto;
 
   article & {
-    border-radius: $radius;
     margin: 2em 0;
+    border-radius: $radius;
   }
 }
 

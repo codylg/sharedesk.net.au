@@ -3,8 +3,6 @@ extends layout
 block content
   
   article
-    h2 Pricing &amp; facilites
-
     table.pricing-table
       thead
         tr
@@ -40,12 +38,15 @@ block content
       a.button-yellow.button-small.button-wide(href="https://www.sharedesk.net/spaces/view/14842/sharedesk-pty-ltd/", target="_blank") View details &amp; book a desk &rarr;
 
     img(src="/img/sharedesk@2x.jpg", alt="Sharedesk standup desk")
+    
+    p Any questions? 
+      a(href="/contact") Get in touch
 
-    table.opening-hours
-      thead
-        tr
-          th Opening hours
-      tbody
-        tr
-          td Monday - Friday
-          td 9am - 5pm
+    //- table.opening-hours
+    //-   thead
+    //-     tr
+    //-       th Opening hours
+    //-   tbody
+    //-     tr
+    //-       td Monday - Friday
+    //-       td 9am - 5pm
