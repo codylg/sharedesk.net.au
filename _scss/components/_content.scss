@@ -16,7 +16,7 @@ section.page-content {
     padding: $page-padding;
     margin: 0 auto;
     margin-bottom: $page-padding;
-    border-radius: $radius * 2;
+    border-radius: $radius;
     background-color: $white;
     color: $deep-purple;
     @include prefix(box-shadow, 0 20px 40px rgba($deep-purple, 0.66));
